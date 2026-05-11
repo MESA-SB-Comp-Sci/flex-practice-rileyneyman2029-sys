@@ -100,21 +100,26 @@ on the children, the rest are properties you have used in past challenges
   height: 320px;
     /* add code below */
   display:flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .c-6-child-1 {
   background-color: lightgrey;
-  /* add code below */
+  flex:1;
   align-items: start;
+  display:flex;
+  justify-content: space-around;
+  /* add code below */
 
 }
 
 .c-6-child-2 {
   background-color: darkgrey;
-  align-items: start;
-  justify-content: end;
+  flex:1;
   /* add code below */
+  display:flex;
+  justify-content: space-around;
+  align-items: end;
 }
 
 
