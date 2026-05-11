@@ -5,7 +5,8 @@
 .challenge-1 {
   background-color: grey;
   width: 100vw;
-  /* add code below */
+  display:flex;
+  flex-direction: row;
 
 
 }
@@ -19,7 +20,7 @@
   background-color: grey;
   width: 100vw;
   display: flex;
-  /* add code below*/
+  flex-direction:column;
 
 
 
@@ -34,9 +35,9 @@
 .challenge-3 {
   background-color: grey;
   width: 100vw;
-  /* add code below */
-
-
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -48,7 +49,10 @@
   background-color: grey;
   width: 100vw;
   height: 400px;
-  /* add code below */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
 
 
@@ -65,15 +69,17 @@
 .challenge-5a {
   background-color: grey;
   width: 100vw;
-  /* top section, add code below */
-
+  display:flex;
+  justify-content: center;
 }
 
 .challenge-5b {
   background-color: lightgray;
   width: 100vw;
   /* bottom section, add code below */
-
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -93,19 +99,21 @@ on the children, the rest are properties you have used in past challenges
   width: 100vw;
   height: 320px;
     /* add code below */
-
+  display:flex;
+  justify-content: space-between;
 }
 
 .c-6-child-1 {
   background-color: lightgrey;
   /* add code below */
-
+  align-items: start;
 
 }
 
 .c-6-child-2 {
   background-color: darkgrey;
-
+  align-items: start;
+  justify-content: end;
   /* add code below */
 }
 
@@ -135,11 +143,13 @@ on the children, the rest are properties you have used in past challenges
 
   width: 100vw;
   height: 100vh;
+  display:flex;
     /* 
     there are two properties missing here 
     one to turn it into a flex container and another to get
     the elements to get into the right direction.
     */
+  flex-direction: column;
 }
 
 .c-7-header {
@@ -149,7 +159,7 @@ on the children, the rest are properties you have used in past challenges
   This property is used on children,
   it allows it to take up any empty space
   */
-
+  flex:1;
 
 }
 
@@ -163,28 +173,29 @@ on the children, the rest are properties you have used in past challenges
    it allows it to take up any empty space
   */
   display: flex;
-
+  flex:1;
+  justify-content: center;
 }
 
 .c-7-sidebar {
   background-color: coral;
 /*   This property is used on children,
   it allows it to take up any empty space */
-
+  flex:1
 }
 
 .c-7-main {
   background-color: lightgreen;
   /*   This property is used on children,
   it allows it to take up any empty space */
-
+  flex:1;
 }
 
 .c-7-footer {
   background-color: steelblue;
   /*   This property is used on children,
   it allows it to take up any empty space */
-
+  flex:1;
 }
 
 
